@@ -605,7 +605,7 @@ export const enterpriseStack = {
               </div>
               <div class="channel-card__title-wrap">
                 <h3 class="channel-card__name">{{ $t('contact.email_name') }}</h3>
-                <span class="channel-card__meta">info@al-mehdarTech.com</span>
+                <span class="channel-card__meta">almehdartec@gmail.com</span>
               </div>
             </div>
             <p class="channel-card__desc">
@@ -613,7 +613,7 @@ export const enterpriseStack = {
             </p>
             <div class="channel-card__action">
               <a
-                href="mailto:info@al-mehdarTech.com"
+                href="mailto:almehdartec@gmail.com"
                 class="btn btn--secondary btn--full"
               >
                 <span>{{ $t('contact.email_btn') }}</span>
