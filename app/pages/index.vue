@@ -1354,6 +1354,8 @@ const processSteps = computed(() => [
   padding: 6rem 0;
   position: relative;
   z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .Tech-badge {
@@ -1366,12 +1368,14 @@ const processSteps = computed(() => [
   font-weight: 700;
   color: var(--brand-glow);
   margin-bottom: 1.25rem;
+  max-width: 100%;
 }
 
 .Tech-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1.25rem;
+  width: 100%;
 }
 
 .Tech-card {
@@ -1383,6 +1387,11 @@ const processSteps = computed(() => [
   flex-direction: column;
   position: relative;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .Tech-card:hover {
@@ -1397,6 +1406,8 @@ const processSteps = computed(() => [
   justify-content: space-between;
   margin-bottom: 1.25rem;
   gap: 0.5rem;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .Tech-card__icon {
@@ -1463,12 +1474,16 @@ const processSteps = computed(() => [
   color: var(--text-primary);
   margin-bottom: 0.5rem;
   font-family: 'Outfit', 'Cairo', sans-serif;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .Tech-card__desc {
   font-size: 0.875rem;
   color: var(--text-secondary);
   line-height: 1.6;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -1476,12 +1491,17 @@ const processSteps = computed(() => [
    ═══════════════════════════════════════════════════════ */
 .services-section {
   padding: 6rem 0;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .bento-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  width: 100%;
 }
 
 .bento-card {
@@ -1493,6 +1513,11 @@ const processSteps = computed(() => [
   flex-direction: column;
   position: relative;
   transition: all 0.3s ease;
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .bento-card:hover {
@@ -1507,6 +1532,10 @@ const processSteps = computed(() => [
   border-color: rgba(124, 77, 255, 0.28);
 }
 
+.bento-card:last-child {
+  grid-column: span 3;
+}
+
 .bento-card__badge {
   align-self: flex-start;
   padding: 0.3rem 0.85rem;
@@ -1517,6 +1546,8 @@ const processSteps = computed(() => [
   font-weight: 700;
   color: var(--brand-glow);
   margin-bottom: 1.25rem;
+  max-width: 100%;
+  word-break: break-word;
 }
 
 .bento-card__header {
@@ -1524,6 +1555,8 @@ const processSteps = computed(() => [
   align-items: center;
   gap: 1rem;
   margin-bottom: 1rem;
+  min-width: 0;
+  width: 100%;
 }
 
 .bento-icon {
@@ -1549,6 +1582,9 @@ const processSteps = computed(() => [
   font-weight: 800;
   color: var(--text-primary);
   line-height: 1.3;
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .bento-card__desc {
@@ -1556,6 +1592,8 @@ const processSteps = computed(() => [
   line-height: 1.7;
   color: var(--text-secondary);
   margin-bottom: 1.5rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .bento-tags {
@@ -1563,6 +1601,7 @@ const processSteps = computed(() => [
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-top: auto;
+  max-width: 100%;
 }
 
 .bento-tag {
@@ -1573,6 +1612,8 @@ const processSteps = computed(() => [
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
   color: var(--text-secondary);
+  max-width: 100%;
+  word-break: break-word;
 }
 
 .bento-preview-code {
@@ -1583,6 +1624,9 @@ const processSteps = computed(() => [
   overflow: hidden;
   direction: ltr;
   text-align: left;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .code-header {
@@ -1592,6 +1636,8 @@ const processSteps = computed(() => [
   padding: 0.6rem 1rem;
   background: rgba(255, 255, 255, 0.03);
   border-bottom: 1px solid var(--brand-border);
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .code-dot {
@@ -1599,6 +1645,7 @@ const processSteps = computed(() => [
   height: 9px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
 }
 
 .code-title {
@@ -1606,6 +1653,9 @@ const processSteps = computed(() => [
   font-size: 0.75rem;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   color: var(--text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .code-body {
@@ -1615,6 +1665,10 @@ const processSteps = computed(() => [
   color: var(--brand-ice);
   line-height: 1.6;
   overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -2180,6 +2234,10 @@ const processSteps = computed(() => [
   .bento-card--featured {
     grid-column: span 2;
   }
+
+  .bento-card:last-child {
+    grid-column: span 2;
+  }
   
   .why-grid {
     grid-template-columns: 1fr;
@@ -2319,7 +2377,8 @@ const processSteps = computed(() => [
     gap: 1.15rem;
   }
 
-  .bento-card--featured {
+  .bento-card--featured,
+  .bento-card:last-child {
     grid-column: span 1;
   }
 
