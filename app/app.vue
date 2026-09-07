@@ -1,5 +1,6 @@
 <template>
   <div id="app-root" :dir="currentDir" :lang="locale" :class="`lang-${locale}`">
+    <NuxtPwaManifest />
     <NuxtRouteAnnouncer />
     <NuxtLayout>
       <NuxtPage />
@@ -24,11 +25,15 @@ useHead(() => ({
   title: t('meta.title'),
   meta: [
     { name: 'description', content: t('meta.description') },
-    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=5' },
     { property: 'og:title', content: t('meta.title') },
     { property: 'og:description', content: t('meta.description') },
     { property: 'og:type', content: 'website' },
     { name: 'theme-color', content: '#070318' },
+    { name: 'apple-mobile-web-app-capable', content: 'yes' },
+    { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
+    { name: 'apple-mobile-web-app-title', content: 'Al-Mehdar Tech' },
+    { name: 'format-detection', content: 'telephone=no' },
   ],
   link: [
     { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

@@ -2159,16 +2159,22 @@ const processSteps = computed(() => [
    RESPONSIVE DESIGN (MOBILE & TABLET BREAKPOINTS)
    ═══════════════════════════════════════════════════════ */
 @media (max-width: 1024px) {
+  .hero-section {
+    padding: 9rem 0 5rem;
+  }
+
   .hero-title {
     font-size: 2.75rem;
   }
 
   .Tech-grid {
     grid-template-columns: repeat(3, 1fr);
+    gap: 1.15rem;
   }
   
   .bento-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
   }
   
   .bento-card--featured {
@@ -2182,10 +2188,12 @@ const processSteps = computed(() => [
   
   .timeline-stepper {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
   }
 
   .channels-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
   }
 
   .channel-card--featured {
@@ -2194,23 +2202,51 @@ const processSteps = computed(() => [
 
   .footer-layout {
     grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
   }
 }
 
 @media (max-width: 768px) {
+  /* Section Spacings */
+  .services-section,
+  .Tech-section,
+  .why-section,
+  .process-section,
+  .contact-section {
+    padding: 4rem 0;
+  }
+
+  .cta-banner {
+    padding: 2.5rem 0 4rem;
+  }
+
+  .section-head {
+    margin-bottom: 2.25rem;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+  }
+
+  .section-lead {
+    font-size: 0.98rem;
+  }
+
+  /* Navbar */
   .navbar__nav {
     display: none;
     position: fixed;
     top: 70px;
-    left: 1.5rem;
-    right: 1.5rem;
+    left: 1rem;
+    right: 1rem;
     background: var(--brand-surface-elevated);
     border: 1px solid var(--brand-border);
-    border-radius: 16px;
+    border-radius: 18px;
     padding: 1.5rem;
     flex-direction: column;
-    gap: 1rem;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    gap: 0.75rem;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65);
+    z-index: 1000;
   }
 
   .navbar__nav--active {
@@ -2226,52 +2262,201 @@ const processSteps = computed(() => [
     width: 100%;
     justify-content: center;
     padding: 0.75rem;
+    margin-top: 0.25rem;
   }
 
   .nav-cta {
     margin-inline-start: 0;
     width: 100%;
     justify-content: center;
+    padding: 0.75rem;
   }
 
   .menu-toggle {
     display: flex;
   }
 
+  /* Hero */
+  .hero-section {
+    padding: 7.5rem 0 4rem;
+  }
+
   .hero-title {
     font-size: 2.15rem;
+    line-height: 1.28;
   }
 
   .hero-desc {
     font-size: 1rem;
+    margin-bottom: 2rem;
   }
 
-  .Tech-grid {
-    grid-template-columns: 1fr;
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.85rem;
+    margin-bottom: 2.75rem;
   }
 
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .hero-metrics {
+    gap: 0.85rem;
+    width: 100%;
+  }
+
+  .metric-pill {
+    padding: 0.6rem 1.25rem;
+    flex: 1 1 calc(50% - 0.5rem);
+    justify-content: center;
+  }
+
+  /* Bento Cards */
   .bento-grid {
     grid-template-columns: 1fr;
+    gap: 1.15rem;
   }
 
   .bento-card--featured {
     grid-column: span 1;
   }
 
-  .timeline-stepper {
-    grid-template-columns: 1fr;
+  .bento-card {
+    padding: 1.5rem 1.25rem;
+    border-radius: 18px;
   }
 
+  .bento-card__title {
+    font-size: 1.15rem;
+  }
+
+  .bento-card__desc {
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .bento-preview-code {
+    margin-top: 1.15rem;
+  }
+
+  .code-body {
+    padding: 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  /* Tech Grid */
+  .Tech-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .Tech-card {
+    padding: 1.35rem 1.15rem;
+    border-radius: 16px;
+  }
+
+  /* Why Us & Matrix */
+  .why-grid {
+    gap: 2.5rem;
+  }
+
+  .why-lead {
+    font-size: 1rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .matrix-card {
+    padding: 2.5rem 1.25rem;
+    border-radius: 20px;
+  }
+
+  .matrix-center {
+    margin-bottom: 1.75rem;
+  }
+
+  .matrix-nodes {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .matrix-node {
+    padding: 0.6rem 0.85rem;
+    font-size: 0.825rem;
+  }
+
+  /* Timeline Stepper */
+  .timeline-stepper {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .step-card {
+    padding: 1.4rem 1.2rem;
+    border-radius: 16px;
+  }
+
+  /* CTA Banner */
+  .cta-banner__card {
+    padding: 2.75rem 1.5rem;
+    border-radius: 22px;
+  }
+
+  .cta-banner__title {
+    font-size: 1.75rem;
+  }
+
+  .cta-banner__desc {
+    font-size: 1rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .cta-banner__actions .btn {
+    width: 100%;
+  }
+
+  /* Channels Grid */
   .channels-grid {
     grid-template-columns: 1fr;
+    gap: 1.15rem;
   }
 
   .channel-card--featured {
     grid-column: span 1;
   }
 
+  .channel-card {
+    padding: 1.5rem 1.25rem;
+    border-radius: 18px;
+  }
+
+  .channel-card__name {
+    font-size: 1.1rem;
+  }
+
+  .channel-card__desc {
+    font-size: 0.88rem;
+    margin-bottom: 1.35rem;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding: 3.5rem 0 1.75rem;
+  }
+
   .footer-layout {
     grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
   }
 
   .scroll-top-btn {
@@ -2280,6 +2465,48 @@ const processSteps = computed(() => [
     width: 44px;
     height: 44px;
     border-radius: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-shell {
+    padding: 0 1rem;
+  }
+
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .hero-status__text {
+    font-size: 0.78rem;
+  }
+
+  .hero-metrics {
+    flex-direction: column;
+  }
+
+  .metric-pill {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .bento-card,
+  .Tech-card,
+  .step-card,
+  .channel-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .cta-banner__card {
+    padding: 2.25rem 1.15rem;
+  }
+
+  .cta-banner__title {
+    font-size: 1.5rem;
+  }
+
+  .matrix-card {
+    padding: 2rem 0.85rem;
   }
 }
 

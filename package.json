@@ -32,6 +32,7 @@
     "@tiptap/starter-kit": "^3.30.5",
     "@tiptap/suggestion": "^3.30.5",
     "@tiptap/vue-3": "^3.30.5",
+    "@vite-pwa/nuxt": "^1.1.1",
     "eslint": "^10.9.1",
     "nuxt": "^4.5.2",
     "tailwindcss": "^4.3.3",
