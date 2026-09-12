@@ -538,7 +538,7 @@ export const enterpriseStack = {
               </div>
               <div class="channel-card__title-wrap">
                 <h3 class="channel-card__name">{{ $t('contact.instagram_name') }}</h3>
-                <span class="channel-card__meta">@almehdarTech</span>
+                <span class="channel-card__meta">@m.tech_9</span>
               </div>
             </div>
             <p class="channel-card__desc">
@@ -546,7 +546,7 @@ export const enterpriseStack = {
             </p>
             <div class="channel-card__action">
               <a
-                href="https://instagram.com/"
+                href="https://www.instagram.com/m.tech_9"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="btn btn--secondary btn--full"
@@ -605,7 +605,7 @@ export const enterpriseStack = {
               </div>
               <div class="channel-card__title-wrap">
                 <h3 class="channel-card__name">{{ $t('contact.email_name') }}</h3>
-                <span class="channel-card__meta">almehdartec@gmail.com</span>
+                <span class="channel-card__meta">almehdartech@gmail.com</span>
               </div>
             </div>
             <p class="channel-card__desc">
@@ -613,7 +613,7 @@ export const enterpriseStack = {
             </p>
             <div class="channel-card__action">
               <a
-                href="mailto:almehdartec@gmail.com"
+                href="mailto:almehdartech@gmail.com"
                 class="btn btn--secondary btn--full"
               >
                 <span>{{ $t('contact.email_btn') }}</span>
@@ -671,6 +671,43 @@ export const enterpriseStack = {
               <p class="footer-brand-desc">
                 {{ $t('footer.brand_desc') }}
               </p>
+              <div class="footer-social-links">
+                <a
+                  href="https://www.instagram.com/m.tech_9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer-social-btn"
+                  aria-label="Instagram"
+                  title="Instagram: @m.tech_9"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.668.014-4.948.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </a>
+                <a
+                  href="mailto:almehdartech@gmail.com"
+                  class="footer-social-btn"
+                  aria-label="Email"
+                  title="almehdartech@gmail.com"
+                >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </a>
+                <a
+                  href="https://wa.me/967783580777"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer-social-btn"
+                  aria-label="WhatsApp"
+                  title="WhatsApp"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2ZM17.83 16.07C17.59 16.75 16.63 17.32 16.09 17.4C15.6 17.47 14.97 17.5 12.83 16.62C10.1 15.49 8.35 12.72 8.21 12.54C8.07 12.35 7.1 11.06 7.1 9.72C7.1 8.38 7.8 7.72 8.05 7.45C8.29 7.17 8.58 7.1 8.76 7.1C8.94 7.1 9.12 7.11 9.28 7.11C9.45 7.11 9.68 7.05 9.91 7.59C10.15 8.16 10.72 9.57 10.79 9.71C10.86 9.85 10.91 10.01 10.81 10.19C10.72 10.38 10.67 10.49 10.53 10.65C10.39 10.82 10.23 11.02 10.1 11.15C9.96 11.29 9.81 11.44 9.98 11.73C10.15 12.02 10.72 12.95 11.57 13.71C12.66 14.68 13.58 14.98 13.87 15.12C14.16 15.26 14.33 15.24 14.5 15.05C14.67 14.86 15.24 14.19 15.44 13.9C15.64 13.61 15.84 13.66 16.11 13.76C16.39 13.86 17.9 14.61 18.21 14.76C18.52 14.91 18.73 14.98 18.8 15.1C18.87 15.22 18.87 15.56 18.63 16.24L17.83 16.07Z"/>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -2153,6 +2190,35 @@ const processSteps = computed(() => [
   color: var(--text-secondary);
   line-height: 1.7;
   max-width: 380px;
+}
+
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.footer-social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--brand-border);
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.footer-social-btn:hover {
+  background: var(--brand-surface-elevated);
+  border-color: var(--brand-border-hover);
+  color: var(--brand-ice);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(124, 77, 255, 0.25);
 }
 
 .footer-heading {
